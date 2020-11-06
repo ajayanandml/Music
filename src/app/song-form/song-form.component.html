@@ -1,0 +1,28 @@
+<table>
+    
+<div class="row">
+    <h4><b>Add Songs</b></h4>
+    <mat-form-field>
+        <mat-label> Song Title </mat-label>
+        <input matInput [(ngModel)]="title">
+    </mat-form-field>
+</div>
+<div class="row">
+    <mat-form-field>
+        <mat-label> song Duration(Minutes) </mat-label>
+        <input matInput [(ngModel)]="duration">
+    </mat-form-field>
+</div>
+<div class="table-row">
+    <h5><b>Genre</b></h5>
+    <section>
+        <mat-checkbox  [(ngModel)]="genre.slow"> Slow</mat-checkbox>
+        <mat-checkbox style="padding-left: 1%;" [(ngModel)]="genre.romance"> Romance </mat-checkbox>
+        <mat-checkbox style="padding-left: 1%;" [(ngModel)]="genre.remix"> Remixed </mat-checkbox>
+    </section>
+</div>
+<div style="padding-top: 5%;">
+    <button mat-raised-button color="secondary" (click)="onSave()">Save</button>
+</div>
+
+</table>
